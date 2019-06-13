@@ -11,8 +11,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class SampleBrowserStackTest {
 
-	static String USERNAME = "chinmaykaradkar3"; // System.getenv("BROWSERSTACK_USERNAME");
-	static String AUTOMATE_KEY = "4p6PFPsWM9acCnnGfCuD"; // System.getenv("BROWSERSTACK_USERNAME");
+	static String USERNAME = System.getenv("BROWSERSTACK_USERNAME");
+	static String AUTOMATE_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
 	static String HUB_URL = "http://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
 	public static void main(String[] args) {
