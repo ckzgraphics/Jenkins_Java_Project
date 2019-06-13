@@ -97,7 +97,7 @@
 				<executions>
 					<execution>
 						<goals>
-							<goal>test-compile</goal>
+							<goal>test</goal>
 						</goals>
 					</execution>
 				</executions>
