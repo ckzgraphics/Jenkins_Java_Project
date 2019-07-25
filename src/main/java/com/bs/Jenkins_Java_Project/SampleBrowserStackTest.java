@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import junit.framework.Assert;
+
 public class SampleBrowserStackTest {
 
 	static String USERNAME = System.getenv("BROWSERSTACK_USERNAME");
@@ -24,6 +26,8 @@ public class SampleBrowserStackTest {
 		DesiredCapabilities caps = null;
 
 		try {
+
+			Assert.assertEquals(true, true);
 
 			URLObj = new URL(HUB_URL);
 			caps = new DesiredCapabilities();
@@ -45,6 +49,8 @@ public class SampleBrowserStackTest {
 			webDriver.get(AUT_URL);
 			System.out.println(webDriver.getTitle());
 			take_screenshot(webDriver);
+
+			Assert.assertEquals(true, true);
 
 		} catch (Exception e) {
 			e.printStackTrace();
